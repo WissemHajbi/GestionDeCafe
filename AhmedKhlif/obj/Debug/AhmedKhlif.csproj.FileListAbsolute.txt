@@ -16,6 +16,7 @@ C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.P
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Main.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.LogIn.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Register.resources
+<<<<<<< HEAD
 C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.exe.config
 C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.exe
 C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.pdb
@@ -34,3 +35,6 @@ C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CoreCompileInput
 C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CopyComplete
 C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.exe
 C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.pdb
+=======
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Account.resources
+>>>>>>> a268ffa (Add: product Id and client Id config)

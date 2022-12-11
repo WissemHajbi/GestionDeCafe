@@ -59,6 +59,7 @@
             this.AccountBtn.TabIndex = 2;
             this.AccountBtn.Text = "Account";
             this.AccountBtn.UseVisualStyleBackColor = true;
+            this.AccountBtn.Click += new System.EventHandler(this.AccountBtn_Click);
             // 
             // BuyBtn
             // 

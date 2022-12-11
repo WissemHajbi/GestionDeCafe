@@ -38,7 +38,6 @@
             this.nom_prTextBox = new System.Windows.Forms.TextBox();
             this.categ_prTextBox = new System.Windows.Forms.TextBox();
             this.prix_prTextBox = new System.Windows.Forms.TextBox();
-            this.Id_prTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,24 +157,12 @@
             this.prix_prTextBox.Size = new System.Drawing.Size(100, 22);
             this.prix_prTextBox.TabIndex = 15;
             // 
-            // Id_prTextBox
-            // 
-            this.Id_prTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Id_prTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Id_prTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Id_prTextBox.Location = new System.Drawing.Point(526, 33);
-            this.Id_prTextBox.Name = "Id_prTextBox";
-            this.Id_prTextBox.Size = new System.Drawing.Size(100, 22);
-            this.Id_prTextBox.TabIndex = 16;
-            // 
-            // Form2
+            // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BorderStyle = MetroFramework.Forms.MetroFormBorderStyle.FixedSingle;
             this.ClientSize = new System.Drawing.Size(941, 573);
             this.ControlBox = false;
-            this.Controls.Add(this.Id_prTextBox);
             this.Controls.Add(this.prix_prTextBox);
             this.Controls.Add(this.categ_prTextBox);
             this.Controls.Add(this.nom_prTextBox);
@@ -187,7 +174,7 @@
             this.Controls.Add(this.Modify);
             this.Controls.Add(this.Add);
             this.DisplayHeader = false;
-            this.Name = "Form2";
+            this.Name = "Product";
             this.Padding = new System.Windows.Forms.Padding(20, 30, 20, 20);
             this.Text = "Form2";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -210,6 +197,5 @@
         private System.Windows.Forms.TextBox nom_prTextBox;
         private System.Windows.Forms.TextBox categ_prTextBox;
         private System.Windows.Forms.TextBox prix_prTextBox;
-        private System.Windows.Forms.TextBox Id_prTextBox;
     }
 }

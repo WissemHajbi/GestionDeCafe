@@ -33,7 +33,6 @@ namespace AhmedKhlif
 
         private void registerBtn_Click(object sender, EventArgs e)
         {
-
             int xx;
             
             if (nomTextBox.Text.Length == 0)
@@ -56,16 +55,6 @@ namespace AhmedKhlif
                 MessageBox.Show("donner un numero de telephone !");
                 telTextBox.Focus();
             }
-            else if (idTextBox.Text.Length == 0)
-            {
-                MessageBox.Show("donner un id !");
-                idTextBox.Focus();
-            }
-            else if (int.TryParse(idTextBox.Text,out xx) == false)
-            {
-                MessageBox.Show("donner un id correcte !");
-                idTextBox.Focus();
-            }
             else
             {
                 try
@@ -74,7 +63,7 @@ namespace AhmedKhlif
                     {
                         Client c = new Client();
 
-                        c.Id = int.Parse(idTextBox.Text);
+                        c.Id = ClientAdo.GetLastId() + 1;
                         c.nom_cl = nomTextBox.Text;
                         c.prenom_cl = prenomTextBox.Text;
                         c.tel_cl = telTextBox.Text;

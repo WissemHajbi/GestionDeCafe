@@ -6,12 +6,14 @@ using System.Threading.Tasks;
 
 namespace AhmedKhlif.Data.Models
 {
-    internal class Client
+    public class Client
     {
         public int Id { get; set; }
         public string nom_cl { get; set; }
         public string prenom_cl { get; set; }
         public string tel_cl { get; set; }
         public string Mdp { get; set; }
+
+        public string role_cl { get; set; }
     }
 }

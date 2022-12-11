@@ -16,6 +16,7 @@ namespace AhmedKhlif
     {
 
         public bool UserSuccessfullyAuthenticated { get; private set; }
+        public Client Account { get; private set; }
         public LogIn()
         {
             InitializeComponent();
@@ -52,6 +53,7 @@ namespace AhmedKhlif
                     if (ClientAdo.Login(nomTextBox.Text, mdpTextBox.Text))
                     {
                         UserSuccessfullyAuthenticated = true;
+                        Account = ClientAdo.GetClient(nomTextBox.Text, mdpTextBox.Text);
                         Close();
                     }
                     else

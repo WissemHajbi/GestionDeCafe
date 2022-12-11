@@ -63,6 +63,7 @@
             this.nomTextBox.Name = "nomTextBox";
             this.nomTextBox.Size = new System.Drawing.Size(184, 22);
             this.nomTextBox.TabIndex = 2;
+            this.nomTextBox.Text = "wissem";
             // 
             // mdpTextBox
             // 
@@ -71,6 +72,7 @@
             this.mdpTextBox.Name = "mdpTextBox";
             this.mdpTextBox.Size = new System.Drawing.Size(184, 22);
             this.mdpTextBox.TabIndex = 3;
+            this.mdpTextBox.Text = "wissem123";
             // 
             // logInBtn
             // 

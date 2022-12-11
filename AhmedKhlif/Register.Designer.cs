@@ -28,12 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.idTextBox = new System.Windows.Forms.TextBox();
             this.nomTextBox = new System.Windows.Forms.TextBox();
             this.prenomTextBox = new System.Windows.Forms.TextBox();
             this.telTextBox = new System.Windows.Forms.TextBox();
@@ -41,19 +39,10 @@
             this.registerBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(53, 42);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(18, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "id";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(53, 95);
+            this.label2.Location = new System.Drawing.Point(48, 46);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(33, 16);
             this.label2.TabIndex = 1;
@@ -62,7 +51,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(262, 95);
+            this.label3.Location = new System.Drawing.Point(262, 46);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 16);
             this.label3.TabIndex = 2;
@@ -71,7 +60,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(53, 146);
+            this.label4.Location = new System.Drawing.Point(48, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(21, 16);
             this.label4.TabIndex = 3;
@@ -80,24 +69,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(262, 44);
+            this.label5.Location = new System.Drawing.Point(262, 97);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(34, 16);
             this.label5.TabIndex = 4;
             this.label5.Text = "mdp";
             // 
-            // idTextBox
-            // 
-            this.idTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.idTextBox.Location = new System.Drawing.Point(123, 42);
-            this.idTextBox.Name = "idTextBox";
-            this.idTextBox.Size = new System.Drawing.Size(100, 22);
-            this.idTextBox.TabIndex = 5;
-            // 
             // nomTextBox
             // 
             this.nomTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.nomTextBox.Location = new System.Drawing.Point(123, 95);
+            this.nomTextBox.Location = new System.Drawing.Point(118, 46);
             this.nomTextBox.Name = "nomTextBox";
             this.nomTextBox.Size = new System.Drawing.Size(100, 22);
             this.nomTextBox.TabIndex = 6;
@@ -105,7 +86,7 @@
             // prenomTextBox
             // 
             this.prenomTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.prenomTextBox.Location = new System.Drawing.Point(332, 95);
+            this.prenomTextBox.Location = new System.Drawing.Point(332, 46);
             this.prenomTextBox.Name = "prenomTextBox";
             this.prenomTextBox.Size = new System.Drawing.Size(100, 22);
             this.prenomTextBox.TabIndex = 7;
@@ -113,7 +94,7 @@
             // telTextBox
             // 
             this.telTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.telTextBox.Location = new System.Drawing.Point(123, 146);
+            this.telTextBox.Location = new System.Drawing.Point(118, 97);
             this.telTextBox.Name = "telTextBox";
             this.telTextBox.Size = new System.Drawing.Size(100, 22);
             this.telTextBox.TabIndex = 8;
@@ -121,14 +102,18 @@
             // mdpTextBox
             // 
             this.mdpTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.mdpTextBox.Location = new System.Drawing.Point(332, 44);
+            this.mdpTextBox.Location = new System.Drawing.Point(332, 97);
             this.mdpTextBox.Name = "mdpTextBox";
             this.mdpTextBox.Size = new System.Drawing.Size(100, 22);
             this.mdpTextBox.TabIndex = 9;
             // 
             // registerBtn
             // 
+<<<<<<< HEAD
             this.registerBtn.Location = new System.Drawing.Point(280, 146);
+=======
+            this.registerBtn.Location = new System.Drawing.Point(331, 163);
+>>>>>>> a268ffa (Add: product Id and client Id config)
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(101, 38);
             this.registerBtn.TabIndex = 10;
@@ -146,12 +131,11 @@
             this.Controls.Add(this.telTextBox);
             this.Controls.Add(this.prenomTextBox);
             this.Controls.Add(this.nomTextBox);
-            this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
@@ -162,13 +146,10 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox idTextBox;
         private System.Windows.Forms.TextBox nomTextBox;
         private System.Windows.Forms.TextBox prenomTextBox;
         private System.Windows.Forms.TextBox telTextBox;

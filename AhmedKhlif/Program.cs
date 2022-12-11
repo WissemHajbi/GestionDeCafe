@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AhmedKhlif.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -22,8 +23,9 @@ namespace AhmedKhlif
 
                 if (loginForm.UserSuccessfullyAuthenticated)
                 {
-                    // MainForm is defined elsewhere
-                    Application.Run(new Main());
+                    Main main = new Main();
+                    main.MainAccount = loginForm.Account;
+                    Application.Run(main);
                 }
 
         }

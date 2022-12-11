@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AhmedKhlif.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,9 @@ namespace AhmedKhlif
 {
     public partial class Main : Form
     {
+
+        public Client MainAccount { get; set; }
+
         public Main()
         {
             InitializeComponent();
@@ -22,6 +26,14 @@ namespace AhmedKhlif
             Product f2 = new Product();
             f2.MdiParent = this;
             f2.Show();
+        }
+
+        private void AccountBtn_Click(object sender, EventArgs e)
+        {
+            Account a = new Account();
+            a.MdiParent = this;
+            a.MainAccount = MainAccount;
+            a.Show();
         }
     }
 }

@@ -52,5 +52,12 @@ namespace AhmedKhlif.Data
             SqlCommand cmdmaj = new SqlCommand($"update Product set nom_pr='{p.nom_pr}',prix_pr={p.prix_pr}, categ_pr='{p.categ_pr}' where Id ={p.Id}", DbContext._connexion);
             cmdmaj.ExecuteNonQuery();
         }
+
+        public static int GetLastId()
+        {
+            SqlCommand cmd = new SqlCommand($"select MAX(id) from Product", DbContext._connexion);
+            return (int)cmd.ExecuteScalar();
+        }
+
     }
 }
