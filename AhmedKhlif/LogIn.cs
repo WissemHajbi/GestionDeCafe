@@ -74,5 +74,15 @@ namespace AhmedKhlif
             Register register = new Register();
             register.Show();
         }
+
+        private void nomLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void metroPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

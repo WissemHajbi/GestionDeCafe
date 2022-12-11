@@ -16,3 +16,21 @@ C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.P
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Main.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.LogIn.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Register.resources
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.exe.config
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.exe
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\AhmedKhlif.pdb
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\MetroFramework.Design.dll
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\MetroFramework.dll
+C:\project\GestionDeCafe\AhmedKhlif\bin\Debug\MetroFramework.Fonts.dll
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.AssemblyReference.cache
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.SuggestedBindingRedirects.cache
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.LogIn.resources
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.Main.resources
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.Product.resources
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.Properties.Resources.resources
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.Register.resources
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.GenerateResource.cache
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CoreCompileInputs.cache
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CopyComplete
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.exe
+C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.pdb
