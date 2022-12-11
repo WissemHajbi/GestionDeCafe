@@ -38,3 +38,4 @@ C:\project\GestionDeCafe\AhmedKhlif\obj\Debug\AhmedKhlif.pdb
 =======
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Account.resources
 >>>>>>> a268ffa (Add: product Id and client Id config)
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Buy.resources

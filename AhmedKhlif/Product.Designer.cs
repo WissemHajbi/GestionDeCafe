@@ -38,6 +38,8 @@
             this.nom_prTextBox = new System.Windows.Forms.TextBox();
             this.categ_prTextBox = new System.Windows.Forms.TextBox();
             this.prix_prTextBox = new System.Windows.Forms.TextBox();
+            this.buyBtn = new System.Windows.Forms.Button();
+            this.qteTextBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.productsDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,7 +121,7 @@
             // productsDataGrid
             // 
             this.productsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsDataGrid.Location = new System.Drawing.Point(23, 166);
+            this.productsDataGrid.Location = new System.Drawing.Point(23, 178);
             this.productsDataGrid.Name = "productsDataGrid";
             this.productsDataGrid.RowHeadersWidth = 51;
             this.productsDataGrid.RowTemplate.Height = 24;
@@ -157,12 +159,37 @@
             this.prix_prTextBox.Size = new System.Drawing.Size(100, 22);
             this.prix_prTextBox.TabIndex = 15;
             // 
+            // buyBtn
+            // 
+            this.buyBtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.buyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buyBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buyBtn.Location = new System.Drawing.Point(23, 117);
+            this.buyBtn.Name = "buyBtn";
+            this.buyBtn.Size = new System.Drawing.Size(127, 42);
+            this.buyBtn.TabIndex = 16;
+            this.buyBtn.Text = "Add to cart";
+            this.buyBtn.UseVisualStyleBackColor = false;
+            this.buyBtn.Click += new System.EventHandler(this.buyBtn_Click);
+            // 
+            // qteTextBox
+            // 
+            this.qteTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.qteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.qteTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.qteTextBox.Location = new System.Drawing.Point(174, 128);
+            this.qteTextBox.Name = "qteTextBox";
+            this.qteTextBox.Size = new System.Drawing.Size(100, 22);
+            this.qteTextBox.TabIndex = 17;
+            // 
             // Product
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(941, 573);
             this.ControlBox = false;
+            this.Controls.Add(this.qteTextBox);
+            this.Controls.Add(this.buyBtn);
             this.Controls.Add(this.prix_prTextBox);
             this.Controls.Add(this.categ_prTextBox);
             this.Controls.Add(this.nom_prTextBox);
@@ -197,5 +224,7 @@
         private System.Windows.Forms.TextBox nom_prTextBox;
         private System.Windows.Forms.TextBox categ_prTextBox;
         private System.Windows.Forms.TextBox prix_prTextBox;
+        private System.Windows.Forms.Button buyBtn;
+        private System.Windows.Forms.TextBox qteTextBox;
     }
 }

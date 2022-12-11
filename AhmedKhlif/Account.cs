@@ -26,6 +26,7 @@ namespace AhmedKhlif
             telTextBox.Text = MainAccount.tel_cl.Trim();
             mdpTextBox.Text = MainAccount.Mdp.Trim();
             roleTextBox.Text = MainAccount.role_cl.Trim();
+            soldeTextBox.Text = MainAccount.solde.ToString();
             roleTextBox.Enabled= false;
         }
     }

@@ -62,10 +62,20 @@
       <DependentUpon>Account.cs</DependentUpon>
     </Compile>
     <Compile Include="Data\ClientAdo.cs" />
+    <Compile Include="Data\CommandeAdo.cs" />
     <Compile Include="Data\DbContext.cs" />
+    <Compile Include="Data\LigneCommandeAdo.cs" />
     <Compile Include="Data\Models\Client.cs" />
+    <Compile Include="Data\Models\Commande.cs" />
+    <Compile Include="Data\Models\LigneCommande.cs" />
     <Compile Include="Data\Models\Product.cs" />
     <Compile Include="Data\ProductAdo.cs" />
+    <Compile Include="Buy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buy.Designer.cs">
+      <DependentUpon>Buy.cs</DependentUpon>
+    </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -94,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="Account.resx">
       <DependentUpon>Account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Buy.resx">
+      <DependentUpon>Buy.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>

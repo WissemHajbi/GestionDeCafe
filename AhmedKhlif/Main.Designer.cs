@@ -73,6 +73,7 @@
             this.BuyBtn.TabIndex = 1;
             this.BuyBtn.Text = "Buy";
             this.BuyBtn.UseVisualStyleBackColor = true;
+            this.BuyBtn.Click += new System.EventHandler(this.BuyBtn_Click);
             // 
             // MenuBtn
             // 

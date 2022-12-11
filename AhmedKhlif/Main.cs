@@ -25,6 +25,7 @@ namespace AhmedKhlif
         {
             Product f2 = new Product();
             f2.MdiParent = this;
+            f2.MainAccount = MainAccount;
             f2.Show();
         }
 
@@ -34,6 +35,14 @@ namespace AhmedKhlif
             a.MdiParent = this;
             a.MainAccount = MainAccount;
             a.Show();
+        }
+
+        private void BuyBtn_Click(object sender, EventArgs e)
+        {
+            Buy b = new Buy();
+            b.MdiParent = this;
+            b.MainAccount = MainAccount;
+            b.Show();
         }
     }
 }

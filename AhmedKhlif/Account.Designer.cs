@@ -38,6 +38,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.roleTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.soldeTextBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // mdpTextBox
@@ -125,11 +127,30 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "role";
             // 
+            // soldeTextBox
+            // 
+            this.soldeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.soldeTextBox.Location = new System.Drawing.Point(398, 153);
+            this.soldeTextBox.Name = "soldeTextBox";
+            this.soldeTextBox.Size = new System.Drawing.Size(100, 22);
+            this.soldeTextBox.TabIndex = 24;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(331, 155);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(41, 16);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "solde";
+            // 
             // Account
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.soldeTextBox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.roleTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mdpTextBox);
@@ -162,5 +183,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox roleTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox soldeTextBox;
+        private System.Windows.Forms.Label label6;
     }
 }

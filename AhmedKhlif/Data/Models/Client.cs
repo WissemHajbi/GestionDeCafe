@@ -13,7 +13,7 @@ namespace AhmedKhlif.Data.Models
         public string prenom_cl { get; set; }
         public string tel_cl { get; set; }
         public string Mdp { get; set; }
-
         public string role_cl { get; set; }
+        public int solde { get; set; }
     }
 }

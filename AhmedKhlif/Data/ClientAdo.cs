@@ -32,7 +32,7 @@ namespace AhmedKhlif.Data
         public static Client GetClient(string nom, string mdp)
         {
             Client c = new Client();
-            SqlCommand cmd = new SqlCommand($"select id, nom_cl, prenom_cl, tel_cl, mdp, role_cl from Client where nom_cl = '{nom}' and Mdp = '{mdp}'", DbContext._connexion);
+            SqlCommand cmd = new SqlCommand($"select id, nom_cl, prenom_cl, tel_cl, mdp, role_cl, solde from Client where nom_cl = '{nom}' and Mdp = '{mdp}'", DbContext._connexion);
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
             { 
@@ -42,6 +42,7 @@ namespace AhmedKhlif.Data
                 c.tel_cl = reader.GetString(3);
                 c.Mdp = reader.GetString(4);
                 c.role_cl = reader.GetString(5);
+                c.solde = reader.GetInt32(6);
             }
             return c;
         }
@@ -56,6 +57,12 @@ namespace AhmedKhlif.Data
         {
             SqlCommand cmd = new SqlCommand($"select MAX(id) from Client", DbContext._connexion);
             return (int)cmd.ExecuteScalar();
+        }
+
+        public static void Buy(Client c, int total)
+        {
+            SqlCommand cmdmaj = new SqlCommand($"update Client set solde = {c.solde - total} where Id = {c.Id}", DbContext._connexion);
+            cmdmaj.ExecuteNonQuery();
         }
     }
 }

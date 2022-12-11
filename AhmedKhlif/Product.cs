@@ -20,6 +20,8 @@ namespace AhmedKhlif
             InitializeComponent();
         }
 
+        public Client MainAccount { get; set; }
+
         private void Form2_Load(object sender, EventArgs e)
         {
             try
@@ -157,6 +159,36 @@ namespace AhmedKhlif
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void buyBtn_Click(object sender, EventArgs e)
+        {
+            LigneCommande l = new LigneCommande();
+
+            l.Id = LigneCommandeAdo.GetLastId() + 1;
+            l.id_Cmd = LigneCommandeAdo.GetLastNumCmd() + 1;
+            l.prod = int.Parse(productsDataGrid[0, productsDataGrid.CurrentRow.Index].Value.ToString());
+
+            int xx;
+
+            if (int.TryParse(qteTextBox.Text,out xx) == false)
+            {
+                MessageBox.Show("donner un quantity correcte ! ");
+                qteTextBox.Focus();
+            }
+            else
+            {
+                l.qte = int.Parse(qteTextBox.Text);
+                l.nom_prod = productsDataGrid[1, productsDataGrid.CurrentRow.Index].Value.ToString();
+                l.client = MainAccount.Id;
+                l.prix_l = l.qte * int.Parse(productsDataGrid[2, productsDataGrid.CurrentRow.Index].Value.ToString());
+                LigneCommandeAdo.Add(l);
+            }
+
+            qteTextBox.Clear();
+            nom_prTextBox.Clear();
+            prix_prTextBox.Clear();
+            categ_prTextBox.Clear();
         }
     }
 }
