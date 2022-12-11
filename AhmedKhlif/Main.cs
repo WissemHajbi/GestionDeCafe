@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace AhmedKhlif
 {
-    public partial class Form1 : Form
+    public partial class Main : Form
     {
-        public Form1()
+        public Main()
         {
             InitializeComponent();
         }
 
         private void MenuBtn_Click(object sender, EventArgs e)
         {
-            Form2 f2 = new Form2();
+            Product f2 = new Product();
             f2.MdiParent = this;
             f2.Show();
         }

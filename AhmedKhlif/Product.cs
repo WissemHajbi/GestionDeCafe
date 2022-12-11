@@ -13,9 +13,9 @@ using System.Windows.Forms;
 
 namespace AhmedKhlif
 {
-    public partial class Form2 : MetroFramework.Forms.MetroForm
+    public partial class Product : MetroFramework.Forms.MetroForm
     {
-        public Form2()
+        public Product()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace AhmedKhlif
         {
             int xx;
 
-            if (int.TryParse(Id_prTextBox.Text,out xx) == false)
+            if (int.TryParse(Id_prTextBox.Text, out xx) == false)
             {
                 MessageBox.Show("donner un Id !");
                 Id_prTextBox.Focus();
@@ -56,41 +56,50 @@ namespace AhmedKhlif
             {
                 MessageBox.Show("donner un category de produit !");
                 categ_prTextBox.Focus();
-            }else
+            }
+            else
             {
-                Product p = new Product();
+                Data.Models.Product p = new Data.Models.Product();
 
                 p.Id = int.Parse(Id_prTextBox.Text);
                 p.nom_pr = nom_prTextBox.Text;
-                p.prix_pr = float.Parse(prix_prTextBox.Text);
-                p.categ_pr= categ_prTextBox.Text;
-
-                try
+                float x;
+                if (float.TryParse(prix_prTextBox.Text, out x) == false)
                 {
-                    if (ProductAdo.Exist(p.Id))
+                    MessageBox.Show("donner une prix correcte !");
+                    prix_prTextBox.Focus();
+                }
+                else
+                {
+                    p.prix_pr = float.Parse(prix_prTextBox.Text);
+                    p.categ_pr = categ_prTextBox.Text;
+
+                    try
                     {
-                        MessageBox.Show("il existe deja une produit avec cette Id !");
-                        Id_prTextBox.Focus();
+                        if (ProductAdo.Exist(p.Id))
+                        {
+                            MessageBox.Show("il existe deja une produit avec cette Id !");
+                            Id_prTextBox.Focus();
+                        }
+                        else
+                        {
+                            ProductAdo.Add(p);
+
+                            // update the gridView
+                            productsDataGrid.DataSource = ProductAdo.Liste_Product();
+
+                            // clear the textBoxes
+                            Id_prTextBox.Clear();
+                            nom_prTextBox.Clear();
+                            prix_prTextBox.Clear();
+                            categ_prTextBox.Clear();
+                        }
                     }
-                    else
+                    catch (Exception ex)
                     {
-                        ProductAdo.Add(p);
-
-                        // update the gridView
-                        productsDataGrid.DataSource = ProductAdo.Liste_Product();
-
-                        // clear the textBoxes
-                        Id_prTextBox.Clear();
-                        nom_prTextBox.Clear();
-                        prix_prTextBox.Clear();
-                        categ_prTextBox.Clear();
+                        MessageBox.Show(ex.Message);
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                
             }
         }
 
@@ -124,7 +133,7 @@ namespace AhmedKhlif
             }
             else
             {
-                Product p = new Product();
+                Data.Models.Product p = new Data.Models.Product();
 
                 p.Id = int.Parse(Id_prTextBox.Text);
                 p.nom_pr = nom_prTextBox.Text;

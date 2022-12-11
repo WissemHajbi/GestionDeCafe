@@ -3,8 +3,6 @@ C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\bin\Debug\AhmedKhlif.e
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\bin\Debug\AhmedKhlif.pdb
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.AssemblyReference.cache
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.SuggestedBindingRedirects.cache
-C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Form1.resources
-C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Form2.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Properties.Resources.resources
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.GenerateResource.cache
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CoreCompileInputs.cache
@@ -14,3 +12,7 @@ C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\bin\Debug\MetroFramewo
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\bin\Debug\MetroFramework.dll
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.csproj.CopyComplete
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Product.resources
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Main.resources
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.LogIn.resources
+C:\Users\wisse\projects\c# training\AhmedKhlif\AhmedKhlif\obj\Debug\AhmedKhlif.Register.resources

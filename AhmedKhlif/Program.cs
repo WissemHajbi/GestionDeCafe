@@ -16,7 +16,16 @@ namespace AhmedKhlif
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+                LogIn loginForm = new LogIn();
+                Application.Run(loginForm);
+
+                if (loginForm.UserSuccessfullyAuthenticated)
+                {
+                    // MainForm is defined elsewhere
+                    Application.Run(new Main());
+                }
+
         }
     }
 }

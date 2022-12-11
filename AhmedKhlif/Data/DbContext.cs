@@ -12,12 +12,12 @@ namespace AhmedKhlif.Data
     {
         public static SqlConnection _connexion;
 
-        public static string ConnextionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
+        public static string ConnectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;
             Initial Catalog=AhmedKhlifbd";
 
         public static void Open()
         {
-            _connexion= new SqlConnection(ConnextionString);
+            _connexion= new SqlConnection(ConnectionString);
             if(_connexion.State == ConnectionState.Closed)
             {
                 _connexion.Open();

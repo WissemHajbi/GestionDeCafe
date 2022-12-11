@@ -1,6 +1,6 @@
 ﻿namespace AhmedKhlif
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -87,15 +87,17 @@
             this.MenuBtn.UseVisualStyleBackColor = true;
             this.MenuBtn.Click += new System.EventHandler(this.MenuBtn_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 570);
             this.Controls.Add(this.MotherContainer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.IsMdiContainer = true;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Main";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Cafe Manager";
             this.MotherContainer.ResumeLayout(false);
             this.ResumeLayout(false);
 

@@ -1,6 +1,6 @@
 ﻿namespace AhmedKhlif
 {
-    partial class Form2
+    partial class Product
     {
         /// <summary>
         /// Required designer variable.

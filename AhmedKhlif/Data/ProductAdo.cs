@@ -14,15 +14,9 @@ namespace AhmedKhlif.Data
         public static DataTable Liste_Product()
         {
             DataTable tab = new DataTable();
-            SqlDataAdapter da = new SqlDataAdapter("select * from Product", DbContext.ConnextionString);
+            SqlDataAdapter da = new SqlDataAdapter("select * from Product", DbContext.ConnectionString);
             da.Fill(tab);
             return tab;
-        }
-
-        public static void Add(Product p)
-        {
-            SqlCommand cmd = new SqlCommand($"insert into Product(Id,nom_pr,prix_pr,categ_pr) values ({p.Id},'{p.nom_pr}',{p.prix_pr},'{p.categ_pr}')", DbContext._connexion);
-            cmd.ExecuteNonQuery();
         }
 
         public static bool Exist(int id)
@@ -41,13 +35,19 @@ namespace AhmedKhlif.Data
             }
         }
 
+        public static void Add(Models.Product p)
+        {
+            SqlCommand cmd = new SqlCommand($"insert into Product(Id,nom_pr,prix_pr,categ_pr) values ({p.Id},'{p.nom_pr}',{p.prix_pr},'{p.categ_pr}')", DbContext._connexion);
+            cmd.ExecuteNonQuery();
+        }
+
         public static void Delete(int Id)
         {
             SqlCommand cmd = new SqlCommand($"delete from Product where Id = {Id}", DbContext._connexion);
             cmd.ExecuteNonQuery();
         }
 
-        public static void Modify(Product p)
+        public static void Modify(Models.Product p)
         {
             SqlCommand cmdmaj = new SqlCommand($"update Product set nom_pr='{p.nom_pr}',prix_pr={p.prix_pr}, categ_pr='{p.categ_pr}' where Id ={p.Id}", DbContext._connexion);
             cmdmaj.ExecuteNonQuery();
