@@ -109,11 +109,7 @@
             // 
             // registerBtn
             // 
-<<<<<<< HEAD
-            this.registerBtn.Location = new System.Drawing.Point(280, 146);
-=======
             this.registerBtn.Location = new System.Drawing.Point(331, 163);
->>>>>>> a268ffa (Add: product Id and client Id config)
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(101, 38);
             this.registerBtn.TabIndex = 10;
